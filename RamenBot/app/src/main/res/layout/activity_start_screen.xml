@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="139dp"
         android:background="#f72428"
+        android:onClick="sendMessage"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:text="Start"
         android:textAllCaps="true"
@@ -38,27 +39,18 @@
         android:id="@+id/three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="388dp"
-        android:text="3:30"/>
-
-    <Button
-        android:id="@+id/two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/three"
-        android:layout_toRightOf="@+id/one"
-        android:text="3:00"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="383dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="129dp"
+        android:layout_marginStart="48dp"
+        android:text="3:30" />
 
     <Button
         android:id="@+id/one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/three"
-        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/two"
         android:text="2:30"
         tools:layout_editor_absoluteX="238dp"
         tools:layout_editor_absoluteY="383dp" />
@@ -74,5 +66,15 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="92dp"
         tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/three"
+        android:layout_centerHorizontal="true"
+        android:text="3:00"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="383dp" />
 
 </RelativeLayout>

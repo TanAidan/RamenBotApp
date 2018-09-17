@@ -12,7 +12,7 @@ public class TimerScreen extends AppCompatActivity {
     private Button startButton;
 
     private CountDownTimer countDownTimer;
-    private long timeleft = 60000;//1 min
+    private long timeleft;
     private boolean timerRunning;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class TimerScreen extends AppCompatActivity {
                 startStop();
             }
         });
+         timeleft = getIntent().getIntExtra("startTime",0);
     }
     public void startStop()
     {

@@ -13,7 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/startButton"
         android:layout_marginTop="139dp"
-        android:text="10:00"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
